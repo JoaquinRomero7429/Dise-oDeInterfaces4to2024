@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #19a52cce;
+    background-color: #e2f2e2; 
 }
 
 header {
@@ -10,87 +10,67 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color:#19a52cce;
+    background-color: #19a52cce;
 }
 
-.logo img {
+.logo {
     width: 50px;
 }
 
-.search-bar input {
-    width: 50%;
-    padding: 8px;
-    border-radius: 7px;
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.barra-busqueda {
+    width: 40%;
+    max-width: 300px;
+    padding: 10px;
     border: 1px solid #ccc;
-    text-align: center;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
 }
 
-.menu img {
-    width: 30px;
+.barra-busqueda:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-.image-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #F5F5DC;
-    padding: 10px;
-}
-
-.image-container {
-    display: flex;
-    gap: 10px;
-}
-
-.image-container img {
+.carousel-inner img {
     width: 100px;
     height: 100px;
-    border-radius: 10px;
     object-fit: cover;
+    margin: 0 auto;
 }
 
-.placeholder {
-    width: 100px;
-    height: 100px;
-    background-color: #EDEDED;
-    border-radius: 10px;
-}
-
-.carousel-button {
-    font-size: 24px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.vet-list {
-    margin-top: 20px;
-}
-
-.vet-list h2 {
-    background-color: #FFD700;
-    padding: 10px;
+.vet-locations {
     text-align: center;
-    color: #333;
-    margin: 0;
-    border-radius: 5px 5px 0 0;
 }
 
-.vet-list ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: #FFF3CC;
-    border-radius: 0 0 5px 5px;
-}
-
-.vet-list li {
+.vet-locations button {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 10px auto;
     padding: 15px;
-    border-bottom: 1px solid #DDD;
+    background-color: #19a52cce;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
-.vet-list li:last-child {
-    border-bottom: none;
+.vet-locations button:hover {
+    background-color: #007bff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; 
 }
 
 footer {
@@ -103,15 +83,10 @@ footer {
 .footer-icon img {
     width: 30px;
 }
-.section2{
-    
-    border-style: ridge;
-    border-color: black;
-}
+
 main {
     padding: 20px;
-
-    
+    color: #d3d3d3ce;
 }
 
 section {
@@ -120,9 +95,14 @@ section {
     margin-bottom: 20px;
 }
 
-.imag {
-   display: flex;
-   justify-content: center;
-   margin: 20px;
 
+
+.carousel-item img {
+    width: 80%; 
+    max-width: 400px;
+    height: 200px; 
+    object-fit: cover; 
+    margin: 0 auto; 
 }
+
+

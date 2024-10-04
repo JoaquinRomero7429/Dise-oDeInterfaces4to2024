@@ -11,95 +11,63 @@
     <div class="contenedor">
         <header class="encabezado">
             <img src="img/image.png" alt="Logo" class="logo">
-            <input type="text" class="barra-busqueda" placeholder="Buscar...">
-
-            
+            <div class="search-bar">
+                <input type="text" id="search-input" class="barra-busqueda" placeholder="Buscar...">
+            </div>
         </header>
         <main>
-          
-          <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Perro2.jfif" class="d-block" alt="perro2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/perro10.jfif" class="d-block" alt="perro10">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/perro7.jfif" class="d-block" alt="perro7">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/Perro2.jfif" class="d-block w-100" alt="perro2" >
-              </div>
-              <div class="carousel-item">
-                <img src="img/perro10.jfif" class="d-block w-100" alt="perro10" >
-              </div>
-              <div class="carousel-item">
-                <img src="img/perro7.jfif" class="d-block w-100" alt="perro2" >
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-             <img class="section2"><img src="img/Perro2.jfif" alt="perro2" width="200px" height="200px"/>
-             <img class="section2"><img src="img/perro10.jfif" alt="perro10" width="200px" height="200px"/>
-             <img class="section2"><img src="img/perro7.jfif" alt="perro2" width="200px" height="200px"/>
-             <img class="section2"><img src="img/perro8.jfif" alt="perro8" width="200px" height="200px"/>
-             <img class="section2"><img src="img/Perro1.jfif" alt="perro5" width="200px" height="200px"/>
-      
-        
-        <main>
-          <section id="seccion1">
-              <p>Refugio Huellitas de Esperanza
-                Localidad: La Falda.
-                 .</p>
-          </section>
-      
-          <section id="seccion2">
-              <p>Clínica Veterinaria La Falda
 
-                Localidad: La Falda..</p>
-          </section>
-      
-          <section id="seccion3">
-              <p>Centro Veterinario Valle de Punilla
-
-                Localidad: Villa Carlos Paz..</p>
-          </section>
-      
-          <section id="seccion4">
-              <p>Alma animal
-                Localidad: Valle hermoso.</p>
-          </section>
-          
-      </main>
+            <section class="vet-locations">
+                <h2>Veterinarias en la zona</h2>
+                <button data-localidad="villa giardino" onclick="location.href='link_villa_giardino.html'">Villa Giardino</button>
+                <button data-localidad="huerta grande" onclick="location.href='link_huerta_grande.html'">Huerta Grande</button>
+                <button data-localidad="valle hermoso" onclick="location.href='link_valle_hermoso.html'">Valle Hermoso</button>
+                <button data-localidad="la falda" onclick="location.href='link_la_falda.html'">La Falda</button>
+            </section>
         </main>
-            <div class="deslizador">
-                
-                <div class="flecha-deslizador"></div>
-            </div>
-
-            <div class="titulo-se"></div>
 
         <footer> 
             <a href="mailto:ayuda@ejemplo.com" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px;">Ayuda</a>
             <div style="margin-top: 10px;">
-              <a href="https://www.facebook.com" target="_blank">
-                <img src="img/face.png" alt="Facebook" style="width: 24px; height: 24px; margin: 0 5px;"/>
-              </a>
-              <a href="https://www.twitter.com" target="_blank">
-                <img src="img/twiter.png" alt="Twitter" style="width: 24px; height: 24px; margin: 0 5px;"/>
-              </a>
-              <a href="https://www.instagram.com" target="_blank">
-                <img src="img/instagram.jfif" alt="Instagram" style="width: 24px; height: 24px; margin: 0 5px;"/>
-              </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="img/face.png" alt="Facebook" style="width: 24px; height: 24px; margin: 0 5px;"/>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="img/twiter.png" alt="Twitter" style="width: 24px; height: 24px; margin: 0 5px;"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="img/instagram.jfif" alt="Instagram" style="width: 24px; height: 24px; margin: 0 5px;"/>
+                </a>
             </div>
-
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
-
+        <script src="js/app.js"></script>
+    </div>
 </body>
 </html>
