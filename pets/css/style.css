@@ -2,19 +2,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e2f2e2; 
+    background-color: #e2f2e2;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     background-color: #19a52cce;
+    position: relative;
 }
 
 .logo {
     width: 50px;
+    position: absolute;
+    left: 10px;
 }
 
 .search-bar {
@@ -24,8 +27,8 @@ header {
 }
 
 .barra-busqueda {
-    width: 40%;
-    max-width: 300px;
+    width: 60%;
+    max-width: 500px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 20px;
@@ -39,21 +42,64 @@ header {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
+.nav-bar {
+    background-color: #006400;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
 .carousel-inner img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    max-width: 300px; /* Tamaño reducido */
+    height: auto; 
     object-fit: cover;
     margin: 0 auto;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+}
+
 .vet-locations {
     text-align: center;
+    margin: 20px auto;
+}
+
+.vet-locations h2 {
+    font-size: 24px;
+    color: #19a52c;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.vet-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .vet-locations button {
     display: block;
-    width: 80%;
-    max-width: 300px;
+    width: 100%;
     margin: 10px auto;
     padding: 15px;
     background-color: #19a52cce;
@@ -62,15 +108,11 @@ header {
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
+    transition: background-color 0.3s;
 }
 
 .vet-locations button:hover {
     background-color: #007bff;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: black; 
 }
 
 footer {
@@ -78,6 +120,7 @@ footer {
     justify-content: space-between;
     background-color: #444;
     padding: 10px;
+    color: #d3d3d3ce;
 }
 
 .footer-icon img {
@@ -86,23 +129,12 @@ footer {
 
 main {
     padding: 20px;
-    color: #d3d3d3ce;
 }
 
 section {
-    border: 1px solid black; 
     padding: 10px;
     margin-bottom: 20px;
 }
 
-
-
-.carousel-item img {
-    width: 80%; 
-    max-width: 400px;
-    height: 200px; 
-    object-fit: cover; 
-    margin: 0 auto; 
-}
 
 
