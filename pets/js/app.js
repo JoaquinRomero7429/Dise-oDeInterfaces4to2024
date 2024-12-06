@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         filtroVetLocalidad();
     });
 
-    // Esta función se encarga de mostrar u ocultar los botones según lo que se escribe en el campo de búsqueda
+    // Esta función se encarga de mostrar , ocultar los botones según lo que se escribe en el campo de búsqueda
     function filtroVetLocalidad() {
         // Toma el texto que escribió el usuario y lo convierte a minúsculas
         const texto = inputBusqueda.value.toLowerCase();
